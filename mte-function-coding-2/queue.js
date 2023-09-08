@@ -7,8 +7,8 @@ function print() {
 }
 
 function enqueue(element) {
-    //add code here
-    collection.push(element);
+    //add code here    
+    collection[collection.length] = element;
     return collection;
 }
 
