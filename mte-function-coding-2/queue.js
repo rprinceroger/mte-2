@@ -15,7 +15,10 @@ function enqueue(element) {
 function dequeue() {
     //add code here
     if (!isEmpty()) {
-        collection.shift();
+        for (let i = 0; i < collection.length - 1; i++) {
+            collection[i] = collection[i + 1];
+        }
+        collection.length -= 1;
         return collection;
     }
 }
